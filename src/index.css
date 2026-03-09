@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -8;
+    }
+  }
+  .animate-dash {
+    animation: dash 2s linear infinite;
+  }
+}

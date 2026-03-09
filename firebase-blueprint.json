@@ -1,0 +1,107 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Customer profile information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "mobile": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "name", "mobile"]
+    },
+    "Cart": {
+      "title": "Cart",
+      "description": "Real-time trolley or basket state",
+      "type": "object",
+      "properties": {
+        "cartId": { "type": "string" },
+        "currentUserId": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "productId": { "type": "string" },
+              "name": { "type": "string" },
+              "quantity": { "type": "integer" },
+              "price": { "type": "number" },
+              "totalPrice": { "type": "number" }
+            }
+          }
+        },
+        "totalCost": { "type": "number" },
+        "location": {
+          "type": "object",
+          "properties": {
+            "lat": { "type": "number" },
+            "lng": { "type": "number" }
+          }
+        },
+        "syncedCartIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "status": { "type": "string", "enum": ["active", "completed"] }
+      },
+      "required": ["cartId"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Supermarket inventory items",
+      "type": "object",
+      "properties": {
+        "productId": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "stock": { "type": "integer" },
+        "category": { "type": "string" },
+        "offers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "description": { "type": "string" },
+              "minQty": { "type": "integer" },
+              "discountedPrice": { "type": "number" },
+              "targetProductId": { "type": "string" }
+            }
+          }
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "aisle": { "type": "string" },
+            "shelf": { "type": "string" },
+            "lat": { "type": "number" },
+            "lng": { "type": "number" }
+          }
+        }
+      },
+      "required": ["productId", "name", "price", "stock"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Historical purchase records",
+      "type": "object",
+      "properties": {
+        "orderId": { "type": "string" },
+        "userId": { "type": "string" },
+        "items": { "type": "array" },
+        "totalCost": { "type": "number" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "offersApplied": { "type": "array" }
+      },
+      "required": ["orderId", "userId", "items", "totalCost", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": { "schema": "User", "description": "User profiles" },
+    "/carts/{cartId}": { "schema": "Cart", "description": "Active shopping sessions" },
+    "/products/{productId}": { "schema": "Product", "description": "Inventory" },
+    "/orders/{orderId}": { "schema": "Order", "description": "Purchase history" }
+  }
+}
