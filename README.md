@@ -97,17 +97,16 @@ Follow these steps to get the development environment running on your local mach
 ### 🔮 Future Roadmap
    The current PWA provides a robust foundation, but we aim to evolve into a fully autonomous retail ecosystem:
 
-* ** ⚖️ Hardware-Level Anti-Theft: Integration of Load Cells (Weight Sensors) under trolley baskets to cross-verify physical weight with digital cart data.
-* ** 📍 BLE Beacon Navigation: Utilizing Bluetooth Low Energy beacons to provide "Blue Dot" indoor pathfinding and heat-map analytics.
-* ** 💳 Integrated FinTech: Full payment gateway integration (UPI/Credit Cards) to generate a dynamic "Exit Pass" QR code for automated gate release.
-* ** 🤖 Computer Vision (YOLOv10): Moving beyond barcodes to real-time object detection, identifying products instantly by their shape and packaging.
-* ** 🛒 Automated "Follow-Me" Trolleys: Motorized trolley mechanisms that follow a user’s smartphone signal for a hands-free experience.
+* **⚖️ Hardware-Level Anti-Theft: Integration of Load Cells (Weight Sensors) under trolley baskets to cross-verify physical weight with digital cart data.
+* **📍 BLE Beacon Navigation: Utilizing Bluetooth Low Energy beacons to provide "Blue Dot" indoor pathfinding and heat-map analytics.
+* **💳 Integrated FinTech: Full payment gateway integration (UPI/Credit Cards) to generate a dynamic "Exit Pass" QR code for automated gate release.
+* **🤖 Computer Vision (YOLOv10): Moving beyond barcodes to real-time object detection, identifying products instantly by their shape and packaging.
+* **🛒 Automated "Follow-Me" Trolleys: Motorized trolley mechanisms that follow a user’s smartphone signal for a hands-free experience.
 
 ### 🤝 Contributing
    We welcome contributions to make "Intelligent Retail" more accessible and efficient!
 
-* **Fork the Project.
-***Create your Feature Branch 
+* Fork the Project. Create your Feature Branch 🤌.
 ```bash 
 git checkout -b feature/AmazingFeature
 Commit your Changes (git commit -m 'Add some AmazingFeature').
