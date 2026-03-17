@@ -108,7 +108,10 @@ Follow these steps to get the development environment running on your local mach
 
 * Fork the Project. Create your Feature Branch 🤌.
 ```bash 
-git checkout -b feature/AmazingFeature
-Commit your Changes (git commit -m 'Add some AmazingFeature').
-Push to the Branch (git push origin feature/AmazingFeature).
-Open a Pull Request for review.
+   git checkout -b feature/AmazingFeature
+   Commit your Changes (git commit -m 'Add some AmazingFeature').
+   Push to the Branch (git push origin feature/AmazingFeature).
+   Open a Pull Request for review.
+
+
+### Developed with ❤️ for the Future of Retail.
