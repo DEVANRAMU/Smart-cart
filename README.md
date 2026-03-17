@@ -103,15 +103,19 @@ Follow these steps to get the development environment running on your local mach
 * **🤖 Computer Vision (YOLOv10):** Moving beyond barcodes to real-time object detection, identifying products instantly by their shape and packaging.
 * **🛒 Automated "Follow-Me" Trolleys:** Motorized trolley mechanisms that follow a user’s smartphone signal for a hands-free experience.
 
+---
+
 ### 🤝 Contributing
    We welcome contributions to make "Intelligent Retail" more accessible and efficient!
 
 * Fork the Project. Create your Feature Branch 🤌.
-```bash 
-   git checkout -b feature/AmazingFeature
-   Commit your Changes (git commit -m 'Add some AmazingFeature').
-   Push to the Branch (git push origin feature/AmazingFeature).
-   Open a Pull Request for review.
+   ```bash 
+      git checkout -b feature/AmazingFeature
+      Commit your Changes (git commit -m 'Add some AmazingFeature').
+      Push to the Branch (git push origin feature/AmazingFeature).
+      Open a Pull Request for review.
+
+---
 
 
 ### Developed with ❤️ for the Future of Retail.
