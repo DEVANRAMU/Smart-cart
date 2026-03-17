@@ -2,9 +2,6 @@
 <img width="1536" height="1024" alt="A family shopping in" src="https://github.com/user-attachments/assets/8cb9930b-a7af-474a-a031-b8288cd0acb6" />
 </div>
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
 
 
 
