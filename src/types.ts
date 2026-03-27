@@ -22,6 +22,7 @@ export interface Cart {
   location?: { lat: number; lng: number };
   syncedCartIds: string[];
   status: 'active' | 'completed';
+  mergedInto?: string;
 }
 
 export interface Offer {

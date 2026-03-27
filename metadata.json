@@ -1,5 +1,5 @@
 {
   "name": "SmartMart Supermarket",
   "description": "A smart supermarket companion for real-time trolley syncing, product scanning, and in-store navigation.",
-  "requestFramePermissions": ["camera", "geolocation"]
+  "requestFramePermissions": ["camera", "geolocation", "microphone"]
 }

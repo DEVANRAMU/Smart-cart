@@ -16,6 +16,7 @@ import Dashboard from './components/Dashboard';
 import Shopping from './components/Shopping';
 import Onboarding from './components/Onboarding';
 import { Loader2 } from 'lucide-react';
+import { Toaster } from 'sonner';
 
 import { seedProducts } from './seed';
 
@@ -60,6 +61,7 @@ export default function App() {
   return (
     <ErrorBoundary>
       <Router>
+        <Toaster position="top-center" richColors />
         <div className="min-h-screen bg-neutral-50 font-sans text-neutral-900">
           <Routes>
             <Route 
